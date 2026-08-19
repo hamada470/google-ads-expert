@@ -6,16 +6,26 @@
     <title>الفهد المحترف - قص الخرسانة بالرياض</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f4f4f4; margin: 0; padding-top: 70px; padding-bottom: 90px; }
-        .top-logo-bar { position: fixed; top: 0; left: 0; width: 100%; height: 60px; background: #1a1a1a; display: flex; align-items: center; padding: 0 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.3); z-index: 2000; box-sizing: border-box; }
-        .top-logo-bar img { width: 45px; height: 45px; border-radius: 8px; object-fit: cover; border: 2px solid #ffcc00; }
-        .top-logo-bar span { color: #ffcc00; font-weight: bold; margin-right: 15px; font-size: 1.1em; }
+        
+        /* شريط علوي مستطيل ثابت يحتوي على اللوجو وأزرار الاتصال */
+        .top-bar { position: fixed; top: 0; left: 0; width: 100%; height: 65px; background: #1a1a1a; display: flex; align-items: center; justify-content: space-between; padding: 0 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.3); z-index: 2000; box-sizing: border-box; }
+        .logo-area { display: flex; align-items: center; }
+        .logo-area img { width: 45px; height: 45px; border-radius: 8px; border: 2px solid #ffcc00; }
+        .top-btns { display: flex; gap: 10px; }
+        .top-btn { padding: 8px 15px; border-radius: 5px; text-decoration: none; font-weight: bold; font-size: 0.9em; color: white; }
+        .btn-wa { background: #25d366; }
+        .btn-call { background: #007bff; }
+
         .container { max-width: 900px; margin: auto; padding: 20px; }
-        .card-banner { width: 100%; max-width: 600px; height: auto; border-radius: 12px; border: 4px solid #ffcc00; margin: 15px auto; display: block; box-shadow: 0 6px 15px rgba(0,0,0,0.4); }
+        .card-banner { width: 100%; max-width: 600px; height: auto; border-radius: 12px; border: 4px solid #ffcc00; margin: 10px auto; display: block; box-shadow: 0 6px 15px rgba(0,0,0,0.4); }
+        
         .section { background: white; padding: 25px; margin-bottom: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
         .section h2 { color: #d32f2f; border-bottom: 2px solid #ffcc00; padding-bottom: 10px; }
         .section p { line-height: 1.9; color: #444; font-size: 1.1em; text-align: justify; }
+        
         .img-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin: 15px 0; }
         .img-grid img { width: 100%; height: 180px; object-fit: cover; border-radius: 8px; border: 2px solid #ddd; }
+        
         .fab { position: fixed; bottom: 20px; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; color: white; font-size: 26px; box-shadow: 0 4px 15px rgba(0,0,0,0.4); z-index: 1000; }
         .fab-wa { right: 20px; background: #25d366; }
         .fab-call { left: 20px; background: #007bff; }
@@ -25,65 +35,70 @@
 </head>
 <body>
 
-    <div class="top-logo-bar">
-        <img src="cc1.jpg" alt="Logo">
-        <span>الفهد المحترف - قص خرسانة</span>
+    <!-- الشريط العلوي -->
+    <div class="top-bar">
+        <div class="logo-area"><img src="cc1.jpg" alt="Logo"></div>
+        <div class="top-btns">
+            <a href="tel:0546382733" class="top-btn btn-call">اتصل</a>
+            <a href="https://wa.me/966546382733" class="top-btn btn-wa">واتساب</a>
+        </div>
     </div>
 
     <div class="container">
         <img src="cc1.jpg" alt="بطاقة الفهد" class="card-banner">
-        <h1 style="text-align: center;">الفهد المحترف لخدمات القص والترميم</h1>
+        <img src="1000009155.jpg" alt="The Professional Cheetah" class="card-banner">
 
-        <!-- تكرار الأقسام الـ 6 -->
+        <!-- الأقسام الستة -->
         <div class="section">
-            <h2>1. قص الجدران والأسوار</h2>
-            <p>نقدم خدمة قص الجدران الخرسانية بأحدث المناشير الماسية (الديسك) التي تضمن دقة متناهية دون إلحاق أي ضرر بالهيكل الإنشائي للمبنى. نعتمد على تكنولوجيا الليزر لضمان الاستقامة التامة والسرعة في التنفيذ. يتم العمل بواسطة فنيين مدربين على التعامل مع أقوى أنواع الخرسانة. نضمن لكم قصاً نظيفاً وحوافاً ناعمة جاهزة للتشطيب، مع الالتزام التام بمعايير الأمان والسلامة في الرياض.</p>
-            <div class="img-grid"><img src="cc2.jpg" alt="عمل"><img src="cc3.jpg" alt="عمل"></div>
-            <a href="tel:0546382733" class="cta-btn cta-btn-call">📞 اتصال: 0546382733</a>
-            <a href="https://wa.me/966546382733" class="cta-btn">💬 واتساب</a>
+            <h2>1. قص الجدران والأسوار الخرسانية</h2>
+            <p>نقدم خدمة قص الجدران الخرسانية بأحدث المناشير الماسية التي تضمن دقة متناهية دون إلحاق أي ضرر بالهيكل الإنشائي. نعتمد على تكنولوجيا الليزر لضمان الاستقامة التامة والسرعة في التنفيذ بجودة عالية. فريقنا مدرب على التعامل مع أقوى أنواع الخرسانة المسلحة والصلبة، ونضمن لكم قصاً نظيفاً وحوافاً ناعمة جاهزة للتشطيب النهائي. نحن نهتم بأدق التفاصيل الهندسية لضمان رضا العميل التام وسرعة التنفيذ مع الالتزام الصارم بمعايير الأمان.</p>
+            <div class="img-grid"><img src="cc2.jpg" alt="قص"><img src="cc3.jpg" alt="قص"></div>
+            <a href="tel:0546382733" class="cta-btn cta-btn-call">📞 اتصال سريع: 0546382733</a>
+            <a href="https://wa.me/966546382733" class="cta-btn">💬 تواصل عبر واتساب</a>
         </div>
 
         <div class="section">
             <h2>2. تخريم الكور (Core Drilling)</h2>
-            <p>تخريم الخرسانة بواسطة تقنية الكور الهندسية هو الحل الأمثل لتمديدات السباكة والكهرباء والتكييف. نمتلك دريلات قوية قادرة على اختراق الخرسانة المسلحة والحديد بدقة عالية وأقطار متنوعة. نضمن ثقوباً دائرية مثالية ونظيفة دون تكسير في المحيط. فريقنا جاهز للتنفيذ بأعلى كفاءة مع الحرص على نظافة الموقع.</p>
-            <div class="img-grid"><img src="cc3.jpg" alt="عمل"><img src="cc4.jpg" alt="عمل"></div>
-            <a href="tel:0546382733" class="cta-btn cta-btn-call">📞 اتصال: 0546382733</a>
-            <a href="https://wa.me/966546382733" class="cta-btn">💬 واتساب</a>
+            <p>تخريم الخرسانة بواسطة تقنية الكور الهندسية هو الحل الأمثل لتمديدات السباكة والكهرباء وأنابيب التكييف داخل المباني الصلبة. نمتلك معدات فائقة القوة قادرة على اختراق الخرسانة المسلحة وحديد التسليح الكثيف بأقطار متنوعة. نضمن الحصول على ثقوب دائرية مثالية ونظيفة دون الحاجة لأي تكسير مزعج. خبرتنا الطويلة جعلتنا الخيار الأول لدى المهندسين، ونستخدم رؤوس حفر ماسية تضمن سرعة الأداء وعدم إجهاد الهيكل الخرساني.</p>
+            <div class="img-grid"><img src="cc3.jpg" alt="كور"><img src="cc4.jpg" alt="كور"></div>
+            <a href="tel:0546382733" class="cta-btn cta-btn-call">📞 اتصال سريع: 0546382733</a>
+            <a href="https://wa.me/966546382733" class="cta-btn">💬 تواصل عبر واتساب</a>
         </div>
 
         <div class="section">
-            <h2>3. فتحات الأبواب والنوافذ</h2>
-            <p>نتميز في قص وفتح الأبواب والنوافذ بدقة هندسية عالية تتناسب مع المخططات المعمارية. نستخدم أجهزة قياس دقيقة لتحديد الأماكن المطلوبة. العمل يتم بشكل مدروس لضمان استمرارية سلامة الجدار وقوته الإنشائية. الجودة التي نقدمها تسهل عملية تركيب الإطارات والتشطيبات لاحقاً.</p>
-            <div class="img-grid"><img src="cc4.jpg" alt="عمل"><img src="cc5.jpg" alt="عمل"></div>
-            <a href="tel:0546382733" class="cta-btn cta-btn-call">📞 اتصال: 0546382733</a>
-            <a href="https://wa.me/966546382733" class="cta-btn">💬 واتساب</a>
+            <h2>3. فتحات الأبواب والنوافذ والمصاعد</h2>
+            <p>نتميز في تنفيذ أعمال قص وفتح الأبواب والنوافذ بدقة هندسية بالغة تتطابق تماماً مع المخططات المعمارية. نعتمد على أجهزة قياس وتحديد متطورة لضمان أخذ المقاسات الصحيحة قبل البدء بالقص. يتم إنجاز العمل بطريقة مدروسة لضمان الحفاظ على متانة الجدار واستمرارية قوته الإنشائية. خدماتنا تشمل الفلل والعمائر التجارية في الرياض، ونلتزم بالمواعيد الصارمة مع استخدام معدات حديثة تقلل الضجيج.</p>
+            <div class="img-grid"><img src="cc4.jpg" alt="أبواب"><img src="cc5.jpg" alt="أبواب"></div>
+            <a href="tel:0546382733" class="cta-btn cta-btn-call">📞 اتصال سريع: 0546382733</a>
+            <a href="https://wa.me/966546382733" class="cta-btn">💬 تواصل عبر واتساب</a>
         </div>
 
         <div class="section">
-            <h2>4. قص الأسقف الخرسانية</h2>
-            <p>التعامل مع الأسقف يتطلب خبرة كبيرة ومعرفة بتوزيع حديد التسليح لضمان السلامة. نوفر خدمة قص الأسقف لعمل فتحات السلالم والتكييف بطرق فنية متقدمة. نستخدم رافعات ومعدات تثبيت تضمن عدم سقوط الجزء المقصوص أثناء العمل. السلامة هي أولويتنا القصوى عند التعامل مع المرتفعات.</p>
-            <div class="img-grid"><img src="cc5.jpg" alt="عمل"><img src="cc1.jpg" alt="عمل"></div>
-            <a href="tel:0546382733" class="cta-btn cta-btn-call">📞 اتصال: 0546382733</a>
-            <a href="https://wa.me/966546382733" class="cta-btn">💬 واتساب</a>
+            <h2>4. قص الأسقف الخرسانية والأسطح</h2>
+            <p>التعامل مع الأسقف والأسطح المسلحة يتطلب خبرة ميدانية واسعة ودراسة دقيقة لتوزيع أحمال الحديد. نوفر حلولاً جذرية وآمنة لقص الأسقف لعمل فتحات السلالم والدكتات. نعتمد على رافعات وأنظمة تثبيت تمنع سقوط الأجزاء المقصوصة بشكل غير مسيطر عليه. تأتي السلامة المهنية في قمة أولوياتنا، ونضمن استواء سطح القص تماماً وعدم وجود أي زوائد تعيق الديكور اللاحق.</p>
+            <div class="img-grid"><img src="cc5.jpg" alt="أسقف"><img src="cc1.jpg" alt="أسقف"></div>
+            <a href="tel:0546382733" class="cta-btn cta-btn-call">📞 اتصال سريع: 0546382733</a>
+            <a href="https://wa.me/966546382733" class="cta-btn">💬 تواصل عبر واتساب</a>
         </div>
 
         <div class="section">
-            <h2>5. التكسير والترميمات الشاملة</h2>
-            <p>نقوم بتنفيذ كافة أعمال التكسير الداخلي والخارجي والهدم الجزئي للكتل الخرسانية كجزء من مشاريع التجديد والترميم. نمتلك الأدوات المناسبة لإنجاز مهام التكسير بسرعة ونظافة دون الإضرار بالأجزاء السليمة. نعمل على ترحيل المخلفات للحفاظ على نظافة الموقع.</p>
-            <div class="img-grid"><img src="cc1.jpg" alt="عمل"><img src="cc2.jpg" alt="عمل"></div>
-            <a href="tel:0546382733" class="cta-btn cta-btn-call">📞 اتصال: 0546382733</a>
-            <a href="https://wa.me/966546382733" class="cta-btn">💬 واتساب</a>
+            <h2>5. أعمال التكسير والترميمات الشاملة</h2>
+            <p>نقوم بتنفيذ كافة أعمال التكسير الداخلي والخارجي والهدم الجزئي كجزء من مشاريع التجديد. نمتلك الأدوات المناسبة لإنجاز مهام التكسير بسرعة ونظافة دون الإضرار بالأجزاء السليمة. نعمل على إزالة المخلفات وترحيلها للحفاظ على نظافة موقع العمل. نعتمد على معايير هندسية دقيقة تحافظ على الأعمدة الأساسية أثناء التعديل، وفريقنا مدرب على إنجاز أصعب المهام بأعلى جودة.</p>
+            <div class="img-grid"><img src="cc1.jpg" alt="ترميم"><img src="cc2.jpg" alt="ترميم"></div>
+            <a href="tel:0546382733" class="cta-btn cta-btn-call">📞 اتصال سريع: 0546382733</a>
+            <a href="https://wa.me/966546382733" class="cta-btn">💬 تواصل عبر واتساب</a>
         </div>
 
         <div class="section">
-            <h2>6. خدمات المصاعد الخاصة</h2>
-            <p>تنفيذ الأعمال الميدانية الخاصة بإنشاء آبار المصاعد يتطلب دقة مطلقة. نقوم بقص وتخريم الخرسانة المسلحة لتجهيز أماكن المصاعد والسلالم الطارئة بأعلى معايير الدقة الهندسية. نعتمد على أحدث المناشير التي تصل لأعمق وأصعب الأماكن في الكتل الخرسانية السميكة.</p>
-            <div class="img-grid"><img src="cc2.jpg" alt="عمل"><img src="cc3.jpg" alt="عمل"></div>
-            <a href="tel:0546382733" class="cta-btn cta-btn-call">📞 اتصال: 0546382733</a>
-            <a href="https://wa.me/966546382733" class="cta-btn">💬 واتساب</a>
+            <h2>6. الأعمال الميدانية للمصاعد والخدمات الخاصة</h2>
+            <p>تنفيذ الأعمال الميدانية لإنشاء آبار المصاعد يتطلب دقة مطلقة لا تقبل الخطأ. نقوم بقص وتخريم الخرسانة المسلحة لتجهيز أماكن المصاعد والسلالم الطارئة بأعلى معايير الدقة. نعتمد على أحدث مناشير الحبل الماسي التي تصل لأعمق الأماكن. نراعي كافة الشروط الفنية لضمان مطابقة الفتحات للمقاييس العالمية، ونعمل طوال أيام الأسبوع لنكون دائماً عند حسن ظنكم.</p>
+            <div class="img-grid"><img src="cc2.jpg" alt="مصاعد"><img src="cc3.jpg" alt="مصاعد"></div>
+            <a href="tel:0546382733" class="cta-btn cta-btn-call">📞 اتصال سريع: 0546382733</a>
+            <a href="https://wa.me/966546382733" class="cta-btn">💬 تواصل عبر واتساب</a>
         </div>
     </div>
 
+    <!-- الأزرار العائمة السفلية -->
     <a href="https://wa.me/966546382733" class="fab fab-wa">💬</a>
     <a href="tel:0546382733" class="fab fab-call">📞</a>
 
